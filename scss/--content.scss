@@ -1,0 +1,162 @@
+.wrapper_content{
+    
+    display: flex;
+    flex-direction: column;
+    
+    &--main{   
+       padding: 0 129px;
+       @include Responsive(desktop-width) {
+        padding: 0 50px;   
+    }
+    
+    }
+
+    &--footer{
+
+        @include Responsive(desktop-max) {
+          margin-top: 50px;
+        }
+
+        margin-top: auto;
+        padding: 30px 0 30px 129px;
+        border: 1px solid #DEDEDE;
+    
+    }
+   
+  
+    
+}
+
+.content_main{
+
+  &--img{
+    margin-top: 20px;
+    text-align: center;
+  }
+  &--box{
+    margin-top: 30px;
+    text-align: center;
+    background: #EFEFEF;
+    padding: 38px 269px;
+
+    @include Responsive(desktop-max) {
+        padding: 38px 109px;
+     }
+     @include Responsive(mobile-width) {
+        padding: 10px 30px;
+     }
+
+
+
+  }
+  &--group{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    @include Responsive(desktop-max) {
+       justify-content: center;
+    }
+
+    
+  }
+
+
+}
+
+
+.main_box--title{
+    font-weight: 700;
+    font-size: 18px;
+    color: $content_color;
+}
+
+ .main_box-text{
+
+    margin-top: 18px;
+    color: $content_color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19px/16px);
+
+
+}
+
+
+
+.main_group--item{
+    @include Responsive(desktop-max) {
+        margin-top: 25px;
+    }
+  width: 470px;
+}
+
+
+
+.group_item--title{
+
+    font-weight: 700;
+    font-size: 24px;
+    color: $content_color;
+
+}
+.group_item--content{
+
+ margin-top: 18px;
+
+}
+
+
+.item_content--img{
+ 
+    float: left;
+  
+}
+
+.item_content--text{
+ 
+    @include Responsive(desktop-width) {
+      width: auto;
+    }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19px/16px);
+    color: $content_color;
+
+
+  
+}
+
+
+
+
+
+
+.content_main--img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & i {
+        
+         display: none;
+         @include Responsive(mobile-width) {
+
+          display: block;
+            
+        }  
+         
+    } 
+
+    & img {
+        
+        @include Responsive(mobile-width) {
+        
+            margin-left: auto;
+            width: 70px;    
+        }  
+    }
+   
+}
